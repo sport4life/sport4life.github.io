@@ -71,6 +71,21 @@
     <div class="product-list" id="productList"></div>
 </div>
 <button class="arrow right-arrow" onclick="scrollProductsRight()">&#10095;</button>
+
+<div class="banner2">
+  <div class="banner-content2">
+    <h1>SPEEDCAT</h1>
+      <p>ÍRD ÚJRA A MÚLTAT</p>
+      <a href="#" class="shop-button">Vásárolj</a>
+  </div>
+</div>
+
+<button class="sponzorarrow sponzorleft-arrow" onclick="scrollsponzorLefts()">&#10094;</button>
+<div class="sponzor-container" id="sponzorContainer">
+    <div class="sponzor-list" id="sponzorList"></div>
+</div>
+<button class="sponzorarrow sponzorright-arrow" onclick="scrollsponzorRights()">&#10095;</button>
+
 <script>
 const products = [
   {
@@ -80,7 +95,7 @@ const products = [
       image: "items/000400_701.jpg"
   },
   {
-      name: "Arena Úszó Szemüveg",
+      name: "Arena Szemüveg",
       price: "$100.00",
       category: "Úszó Szemüveg",
       image: "items/003151_201_1.jpg"
@@ -142,6 +157,80 @@ function scrollProductsLeft() {
 
 function scrollProductsRight() {
   document.getElementById("scrollContainer").scrollBy({ left: 400, behavior: 'smooth' });
+}
+
+
+
+const sponzor = [
+  {
+      name: "Speedcat OG",
+      price: "30,000Ft",
+      category: "Férfi Cipőzet",
+      image: "speedcat/Speedcat-OG-Sneakers.avif"
+  },
+  {
+      name: "Speedcat OG",
+      price: "30,000Ft",
+      category: "Férfi Cipőzet",
+      image: "speedcat/Speedcat-OG-Sneakers2.avif"
+  },
+  {
+      name: "Speedcat OG",
+      price: "30,000Ft",
+      category: "Cipőzet",
+      image: "speedcat/Speedcat-OG-Sneakers3.avif"
+  },
+  {
+      name: "Speedcat OG Women",
+      price: "30,000Ft",
+      category: "Női Cipőzet",
+      image: "speedcat/Speedcat-OG-Women's-Sneakers.avif"
+  },  
+  {
+      name: "Speedcat OG Women",
+      price: "30,000Ft",
+      category: "Női Cipőzet",
+      image: "speedcat/Speedcat-OG-Women's-Sneakers2.avif"
+  },
+  {
+      name: "Speedcat OG Women",
+      price: "35,000Ft",
+      category: "Női Cipőzet",
+      image: "speedcat/Speedcat-OG-Women's-Sneakers3.avif"
+  },
+  {
+      name: "Speedcat OG Piping",
+      price: "30,000Ft",
+      category: "Női Cipőzet",
+      image: "speedcat/Speedcat-Piping-Women's-Sneakers.avif"
+  },
+  {
+      name: "Speedcat OG Piping",
+      price: "35,000Ft",
+      category: "Női Cipőzet",
+      image: "speedcat/Speedcat-Piping-Women's-Sneakers2.avif"
+  },
+];
+const sponzorList = document.getElementById("sponzorList");
+
+sponzor.forEach(sponzor => {
+  const sponzorDiv = document.createElement("div");
+  sponzorDiv.classList.add("sponzor");
+  sponzorDiv.innerHTML = `
+      <img src="${sponzor.image}" alt="${sponzor.name}">
+      <h3>${sponzor.name}</h3>
+      <p>${sponzor.category}</p>
+      <p class="price">${sponzor.price}</p>
+  `;
+  sponzorList.appendChild(sponzorDiv);
+});
+
+function scrollsponzorLefts() {
+  document.getElementById("sponzorContainer").scrollBy({ left: -400, behavior: 'smooth' });
+}
+
+function scrollsponzorRights() {
+  document.getElementById("sponzorContainer").scrollBy({ left: 400, behavior: 'smooth' });
 }
 </script>
 </body>
