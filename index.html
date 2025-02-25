@@ -62,4 +62,87 @@
   </div>
 </div>
 
+<div class="Best-sellers">
+  Legtöbbet eladott termékek
+</div>
+
+<button class="arrow left-arrow" onclick="scrollProductsLeft()">&#10094;</button>
+<div class="scroll-container" id="scrollContainer">
+    <div class="product-list" id="productList"></div>
+</div>
+<button class="arrow right-arrow" onclick="scrollProductsRight()">&#10095;</button>
+<script>
+const products = [
+  {
+      name: "Arena Úszó Sapka",
+      price: "$100.00",
+      category: "Úszó Sapka",
+      image: "items/000400_701.jpg"
+  },
+  {
+      name: "Arena Úszó Szemüveg",
+      price: "$100.00",
+      category: "Úszó Szemüveg",
+      image: "items/003151_201_1.jpg"
+  },
+  {
+      name: "Rignano Jumper",
+      price: "$100.00",
+      category: "Ruházat",
+      image: "items/NA4INQ941-HERO.png"
+  },
+  {
+      name: "Pegasus Premium",
+      price: "$100.00",
+      category: "Cipőzet",
+      image: "items/NIKE+PEGASUS+PREMIUM.png"
+  },  
+  {
+      name: "Speedcat OG",
+      price: "$100.00",
+      category: "Cipőzet",
+      image: "items/Superstar_II_Shoes_Black_JI0079_00_plp_standard.png"
+  },
+  {
+      name: "Speedcat OG",
+      price: "$100.00",
+      category: "Women's Sneakers",
+      image: ""
+  },
+  {
+      name: "Speedcat OG",
+      price: "$100.00",
+      category: "Women's Sneakers",
+      image: ""
+  },
+  {
+      name: "Speedcat OG",
+      price: "$100.00",
+      category: "Women's Sneakers",
+      image: ""
+  },
+];
+const productList = document.getElementById("productList");
+
+products.forEach(product => {
+  const productDiv = document.createElement("div");
+  productDiv.classList.add("product");
+  productDiv.innerHTML = `
+      <img src="${product.image}" alt="${product.name}">
+      <h3>${product.name}</h3>
+      <p>${product.category}</p>
+      <p class="price">${product.price}</p>
+  `;
+  productList.appendChild(productDiv);
+});
+
+function scrollProductsLeft() {
+  document.getElementById("scrollContainer").scrollBy({ left: -400, behavior: 'smooth' });
+}
+
+function scrollProductsRight() {
+  document.getElementById("scrollContainer").scrollBy({ left: 400, behavior: 'smooth' });
+}
+</script>
 </body>
+</html>
