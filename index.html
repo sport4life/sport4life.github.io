@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="Favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+  <meta name="view-transition" content="same-origin">
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="javascript.js" defer></script>
 </head>
 <body>
-    <h1>Home</h1>
-    <p>Welcome to the home page.</p>
-    <h1>OMG</h1>
-    <p>why are you here</p>
+<div>
+    <p>INGYENES KISZÁLLÍTÁS 6000 FT FELETT <u>TUDJ MEG TÖBBET</u></p>
+</div>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+  <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="black"><path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z"/></svg>
+</button>
+
+<nav id="navbar">
+  <ul>
+    <li>
+      <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="black"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z"/></svg>
+      </button>
+    </li>
+    <li class="home-li"><a href="index.html"><img src="icon.png"></a></li>
+    <li><a href="New.html" class=active-link aria-current="page">Új</a></li>
+    <li><a href="Women.html">Női</a></li>
+    <li><a href="Man.html">Férfi</a></li>
+    <li><a href="Kids.html">Gyerek</a></li>
+  </ul>
+</nav>
+
+<div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+
+<div class="promo-banner">
+  30% LEÁRAZÁS - VILLÁMLEÁRAZÁS<br>
+  <span>HASZNNÁLD A: <strong>FLASH</strong> KÓDOT <a href="#"></a></span>
+  <span>MOST VAGY SOHA. 2/28-IG.</span>
+</div>
+
+<div class="banner">
+  <div class="banner-content">
+    <h1>SPORT4LIFE</h1>
+      <p>Új Eszközeink</p>
+      <a href="#" class="shop-button">Vásárolj</a>
+  </div>
+</div>
+
+</body>
 </html>
