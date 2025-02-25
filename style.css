@@ -409,3 +409,32 @@ u{
   margin-left: 0px;
   color: beige;
 }
+@media screen and (max-width: 700px) {
+  .sponzorarrow{
+    position: absolute;
+    top: 155%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    z-index: 10; /* Ensure arrows are above other elements */
+  }
+.arrow{
+  position: absolute;
+  top: 80%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+  z-index: 10; /* Ensure arrows are above other elements */
+}
+  
+}
