@@ -176,7 +176,7 @@ u{
 .banner {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 400px;
   background: url('fortnite.png') no-repeat center center/cover;
   display: flex;
   align-items: center;
@@ -184,7 +184,7 @@ u{
 }
 .banner-content {
   color: beige;
-  max-width: 400px;
+  max-width: 200px;
   padding: 20px;
 }
 .banner h1 {
@@ -274,7 +274,7 @@ u{
 }
 .arrow {
   position: absolute;
-  top: 65%;
+  top: 75%;
   transform: translateY(-50%);
   background: rgba(0, 0, 0, 0.5);
   color: white;
@@ -351,7 +351,7 @@ u{
 }
 .sponzorarrow{
   position: absolute;
-  top: 130%;
+  top: 135%;
   transform: translateY(-50%);
   background: rgba(0, 0, 0, 0.5);
   color: white;
@@ -409,10 +409,139 @@ u{
   margin-left: 0px;
   color: beige;
 }
-@media screen and (max-width: 700px) {
+.grid-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-family: Arial, sans-serif;
+}
+.grid-item {
+  width: 300px;
+  text-align: center;
+}
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+.grid-item img:hover {
+  transform: scale(1.05);
+}
+.grid-item p {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.grind{
+  margin-top: 25px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  font-weight: bolder;
+  font-size: 1.5em;
+  font-family: Arial, sans-serif;
+  color: var(--primary-color);
+  text-align: center;
+}
+.grid2 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.grid-item {
+  width: 250px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+.grid-item img:hover {
+  transform: scale(1.05);
+}
+.grid-item p {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.footer {
+  background-color: #111;
+  padding: 40px 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-top: 1px solid #333;
+  color: #555;
+}
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+.footer-column ul li a {
+  text-decoration: none;
+  color: #bbb;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+.footer-column ul li a:hover {
+  color: #fff;
+}
+.newsletter {
+  background-color: #b69e7c;
+  padding: 12px 16px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  color: #111;
+  text-decoration: none;
+  margin-top: 10px;
+}
+.newsletter:hover {
+  background-color: #a1896c;
+}
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+.social-icons a {
+  color: #bbb;
+  font-size: 20px;
+  text-decoration: none;
+}
+.social-icons a:hover {
+  color: #fff;
+}
+.divider {
+  border-top: 1px solid #333;
+  margin: 20px 0;
+}
+@media (min-width: 768px) {
+  .grid-item {
+      width: 300px;
+  }
+}
+@media screen and (max-width: 1200px) {
   .sponzorarrow{
     position: absolute;
-    top: 155%;
+    top: 165%;
     transform: translateY(-50%);
     background: rgba(0, 0, 0, 0.5);
     color: white;
@@ -425,7 +554,7 @@ u{
   }
 .arrow{
   position: absolute;
-  top: 80%;
+  top: 90%;
   transform: translateY(-50%);
   background: rgba(0, 0, 0, 0.5);
   color: white;
