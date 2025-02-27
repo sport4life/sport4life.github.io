@@ -68,9 +68,9 @@
 </div>
 
 <button class="arrow left-arrow" onclick="scrollProductsLeft()">&#10094;</button>
-<div class="scroll-container" id="scrollContainer">
+<a href="#"><div class="scroll-container" id="scrollContainer">
     <div class="product-list" id="productList"></div>
-</div>
+</div></a>
 <button class="arrow right-arrow" onclick="scrollProductsRight()">&#10095;</button>
 
 <div class="banner2">
@@ -82,9 +82,9 @@
 </div>
 
 <button class="sponzorarrow sponzorleft-arrow" onclick="scrollsponzorLefts()">&#10094;</button>
-<div class="sponzor-container" id="sponzorContainer">
+<a href="#"><div class="sponzor-container" id="sponzorContainer">
     <div class="sponzor-list" id="sponzorList"></div>
-</div>
+</div></a>
 <button class="sponzorarrow sponzorright-arrow" onclick="scrollsponzorRights()">&#10095;</button>
 
 <h2 class="grind">NEHÉZ MUNKÁRA TERVEZETT</h2>
@@ -165,87 +165,88 @@
 const products = [
   {
       name: "Trainer",
-      price: "26 999 FT",
+      price: "26,999Ft",
       category: "Egyensúlyozó tréner",
       image: "/mostsell/A_2613117_HB.webp"
   },
   {
       name: "Zoom X-Fit",
-      price: "6 499 FT",
+      price: "6,499Ft",
       category: "Úszószemüveg",
       image: "/mostsell/A_2898258_HB.webp"
   },
   {
       name: "Ninebot",
-      price: "9 000 FT",
+      price: "9,000Ft",
       category: "Sisak",
       image: "/mostsell/A_2964279_HB.webp"
   },
   {
       name: "Aktivsport",
-      price: "39 999 FT",
+      price: "39,999Ft",
       category: "Bordásfal",
       image: "/mostsell/A_3382736_HB.webp"
   },  
   {
       name: "Phase",
-      price: "8 999 FT",
+      price: "8,999Ft",
       category: "Hátizsák",
       image: "/mostsell/A_3401371_HB.webp"
   },
   {
       name: "X Fact",
-      price: "7 999 FT",
-      category: "Állítható húzódzkodó rúd",
+      price: "7,999Ft",
+      category: "Húzódzkodó rúd",
       image: "/mostsell/A_3450266_HB.webp"
   },
   {
       name: "TA-13 Aktion",
-      price: "4 999 FT",
+      price: "4,999Ft",
       category: "Kerékpár computer",
       image: "/mostsell/A_558470_HB.webp"
   },
   {
       name: "X Fact - UNICORN",
-      price: "99 999 FT",
+      price: "99,999Ft",
       category: "Gyerek kerékpár",
       image: "/mostsell/B_558470_HB.webp"
   },
   {
-      name: "TBA",
-      price: "TBA",
-      category: "TBA",
-      image: ""
-  },  {
-      name: "TBA",
-      price: "TBA",
-      category: "TBA",
-      image: ""
-  },  {
-      name: "TBA",
-      price: "TBA",
-      category: "TBA",
-      image: ""
-  },  {
-      name: "TBA",
-      price: "TBA",
-      category: "TBA",
-      image: ""
-  },  {
-      name: "TBA",
-      price: "TBA",
-      category: "TBA",
-      image: ""
-  },  {
-      name: "TBA",
-      price: "TBA",
-      category: "TBA",
-      image: ""
-  },  {
-      name: "TBA",
-      price: "TBA",
-      category: "TBA",
-      image: ""
+      name: "X Fact",
+      price: "3,000Ft",
+      category: "Súlytárcsa",
+      image: "/mostsell/X-Fact-UTE-2X1-5kg-2285566-00-146707.jpg",
+  },  
+  {
+
+      name: "Schildkröt",
+      price: "159 999 FT",
+      category: "Ping-pong asztal",
+      image: "/mostsell/B_2861055_HB.webp"
+  },  
+  {
+      name: "Robust",
+      price: "86 999 FT",
+      category: "Szobakerékpár",
+      image: "/mostsell/B_2896141_HB.webp"
+  }, 
+{
+      name: "Aktivsport",
+      price: "21 999 FT",
+      category: "Húzódzkodó",
+      image: "/mostsell/B_3315143_HB.webp"
+  },  
+  {
+      name: "Focus II",
+      price: "25 999 FT",
+      category: "Verseny darts tábla",
+      image: "/mostsell/B_3160532_HB.webp"
+  },  
+  {
+      name: "Aktivsport",
+      price: "16 999 FT",
+      category: "Focikapu",
+      image: "/mostsell/B_3509772_HB.webp"
   },
 ];
 const productList = document.getElementById("productList");
@@ -322,35 +323,25 @@ const sponzor = [
       image: "speedcat/Speedcat-Piping-Women's-Sneakers2.avif"
   },
   {
-      name: "TBA",
-      price: "TBA",
-      category: "TBA",
-      image: ""
+      name: "Speedcat Ballet",
+      price: "25,000Ft",
+      category: "Női Cipőzet",
+      image: "/speedcat/Speedcat-Ballet-Leather-Women's-ShoesA.avif"
   },  {
-      name: "TBA",
-      price: "TBA",
-      category: "TBA",
-      image: ""
+      name: "Speedcat OG",
+      price: "30,000Ft",
+      category: "Gyerek Cipőzet",
+      image: "/speedcat/Speedcat-OG-Toddlers'-SneakersC.avif"
   },  {
-      name: "TBA",
-      price: "TBA",
-      category: "TBA",
-      image: ""
+      name: "Speedcat OG",
+      price: "15,000Ft",
+      category: "Gyerek Cipőzet",
+      image: "/speedcat/Speedcat-OG-Little-Kids'-SneakersD.avif"
   },  {
-      name: "TBA",
-      price: "TBA",
-      category: "TBA",
-      image: ""
-  },  {
-      name: "TBA",
-      price: "TBA",
-      category: "TBA",
-      image: ""
-  },  {
-      name: "TBA",
-      price: "TBA",
-      category: "TBA",
-      image: ""
+      name: "Speedcat OG",
+      price: "18,000Ft",
+      category: "Női Cipőzet",
+      image: "/speedcat/Speedcat-OG-Women's-SneakersB.avif"
   },
 ];
 const sponzorList = document.getElementById("sponzorList");

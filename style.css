@@ -1,6 +1,6 @@
 .promo-banner {
-  background-color: #a57f65;
-  color: white;
+  background-color: #bd9682;
+  color: #F1EEE1;
   text-align: center;
   padding: 15px;
   font-family: Arial, sans-serif;
@@ -183,7 +183,7 @@ u{
   padding: 20px;
 }
 .banner-content {
-  color: white;
+  color: #F1EEE1;
   max-width: 200px;
   padding: 20px;
 }
@@ -396,7 +396,7 @@ u{
   padding: 20px;
 }
 .banner-content2 {
-  color: white;
+  color: #F1EEE1;
   max-width: 400px;
   padding: 20px;
 }
@@ -444,6 +444,7 @@ u{
   font-family: Arial, sans-serif;
   color: black;
   text-align: center;
+  color: #5D91AC;
 
 }
 .grid2 {
@@ -506,7 +507,7 @@ u{
   color: #fff;
 }
 .newsletter {
-  background-color: #b69e7c;
+  background-color: #A87662;
   padding: 12px 16px;
   text-align: center;
   font-weight: bold;
@@ -517,7 +518,7 @@ u{
   margin-top: 10px;
 }
 .newsletter:hover {
-  background-color: #a1896c;
+  background-color: #A87655;
 }
 .social-icons {
   display: flex;
@@ -535,6 +536,10 @@ u{
 .divider {
   border-top: 1px solid #333;
   margin: 20px 0;
+}
+a{
+  text-decoration: none;
+  color: black;
 }
 
 @media (min-width: 768px) {
