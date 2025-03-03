@@ -198,6 +198,11 @@ u{
   font-weight: bold;
   color: white;
 }
+
+u:hover{
+  transform: scale(1.05);
+}
+
 .shop-button {
   background: white;
   color: black;
@@ -206,7 +211,13 @@ u{
   font-weight: bold;
   display: inline-block;
   margin-top: 10px;
+  transition: transform 0.3s ease-in-out;
 }
+
+.shop-button:hover{
+  transform: scale(1.05);
+}
+
 .shop-button:hover {
   background: #dfe0e1;
   color: black;
@@ -254,12 +265,14 @@ u{
   border-radius: 8px;
   padding: 20px;
   text-align: center;
+  transition: transform 0.3s ease-in-out;
 }
 .product img {
   width: 100%;
   height: 150px;
   object-fit: cover;
   border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
 }
 .product h3 {
   font-size: 18px;
@@ -302,6 +315,7 @@ u{
   border-radius: 8px;
   padding: 20px;
   text-align: center;
+  transition: transform 0.3s ease-in-out;
 }
 .sponzor-list{
   display: flex;
@@ -312,6 +326,7 @@ u{
   height: 150px;
   object-fit: cover;
   border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
 }
 .sponzor h3 {
   font-size: 18px;
@@ -370,6 +385,10 @@ u{
 
 .sponzorright-arrow {
   right: 10px;
+}
+
+.sponzor,img:hover{
+  transform: scale(1.05);
 }
 
 /* Ensure scroll container does not cut off arrows */
