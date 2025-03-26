@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="../Favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>Trainer - Sport4Life</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="../product-style.css">
+    <script src="../javascript.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <p>INGYENES KISZÁLLÍTÁS 6000 FT+ <u>TUDJ MEG TÖBBET</u></p>
+    </div>
+
+    <nav id="navbar">
+        <ul>
+            <li class="home-li"><a href="../index.html">Bázis</a></li>
+            <li><a href="../New.html">Új</a></li>
+            <li><a href="../Women.html">Női</a></li>
+            <li><a href="../Man.html">Férfi</a></li>
+            <li><a href="../Kids.html">Gyerek</a></li>
+        </ul>
+    </nav>
+
+<div class="product-container">
+    <div class="product-gallery">
+        <div class="main-image">
+            <img src="../mostsell/A_2964279_HB.webp" alt="Ninebot" id="mainImage">
+        </div>
+        <div class="thumbnail-container">
+            <img src="../mostsell/A_2964279_HB.webp" alt="Ninebot View 1" onclick="changeImage(this.src)">
+        </div>
+    </div>
+    
+    <div class="product-details">
+        <div class="product-header">
+            <h1>Ninebot</h1>
+            <p class="price">9,000 Ft</p>
+            <span class="category-tag">Sisak</span>
+        </div>
+
+        <div class="product-description">
+            <h2>Termék leírása</h2>
+            <p>A Ninebot védősisak maximális biztonságot nyújt minden körülmények között. Modern kialakítása és kiváló szellőzése miatt ideális választás városi közlekedéshez és sportoláshoz egyaránt.</p>
+            
+            <ul class="features">
+                <li>Ütésálló külső héj</li>
+                <li>Állítható méret</li>
+                <li>Szellőző rendszer</li>
+                <li>Könnyű súly</li>
+                <li>Gyorskioldó csat</li>
+            </ul>
+
+            <div class="specifications">
+                <h3>Méretek</h3>
+                <ul class="size-options">
+                    <li>S (52-56 cm)</li>
+                    <li>M (56-58 cm)</li>
+                    <li>L (58-61 cm)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="purchase-section">
+            <div class="quantity-selector">
+                <label for="quantity">Mennyiség:</label>
+                <select id="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+
+            <div class="purchase-options">
+                <button class="add-to-cart">Kosárba tesz</button>
+                <button class="buy-now">Azonnali vásárlás</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="newsletter-popup" class="popup-overlay">
+    <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <h2>Iratkozz fel hírlevelünkre</h2>
+        <p>Szerezz 15% kedvezményt első vásárlásodból!</p>
+        <form id="newsletter-form">
+            <input type="email" id="newsletter-email" placeholder="Email címed" required>
+            <button type="submit">Feliratkozás</button>
+        </form>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-column">
+        <h3>Segítségek</h3>
+        <ul>
+            <li><a href="#">Keressenek meg minket</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Kiszállítás</a></li>
+        </ul>
+    </div>
+    
+    <div class="footer-column">
+        <h3>A sport4life-ról</h3>
+        <ul>
+            <li><a href="#">Cég</a></li>
+            <li><a href="#">Szponzorok</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-column">
+        <h3>Szociális Platformok</h3>
+        <div class="social-icons">
+            <a href="#">📘</a>
+            <a href="#">🐦</a>
+            <a href="#">📸</a>
+            <a href="#">📌</a>
+            <a href="#">▶️</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function changeImage(src) {
+        document.getElementById('mainImage').src = src;
+    }
+</script>
+
+<div id="newsletter-popup" class="popup-overlay">
+<div class="popup-content">
+    <span class="close-popup">&times;</span>
+    <h2>Iratkozz fel hírlevelünkre</h2>
+    <p>Szerezz 15% kedvezményt első vásárlásodból!</p>
+    <form id="newsletter-form">
+        <input type="email" id="newsletter-email" placeholder="Email címed" required>
+        <button type="submit">Feliratkozás</button>
+    </form>
+</div>
+</div>
+
+<style>
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.close-popup {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#newsletter-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#newsletter-form button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#newsletter-form button:hover {
+    opacity: 0.8;
+}
+</style>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const newsletterLinks = document.querySelectorAll('.newsletter');
+    const popup = document.getElementById('newsletter-popup');
+    const closeBtn = document.querySelector('.close-popup');
+    const form = document.getElementById('newsletter-form');
+
+    newsletterLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            popup.style.display = 'block';
+        });
+    });
+
+    closeBtn.addEventListener('click', function() {
+        popup.style.display = 'none';
+    });
+
+    popup.addEventListener('click', function(e) {
+        if (e.target === popup) {
+            popup.style.display = 'none';
+        }
+    });
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = document.getElementById('newsletter-email').value;
+        alert('Köszönjük a feliratkozást! A kuponkódot elküldtük a következő email címre: ' + email);
+        popup.style.display = 'none';
+        form.reset();
+    });
+});
+</script>

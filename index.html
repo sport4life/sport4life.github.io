@@ -52,7 +52,7 @@
 <div class="promo-banner">
   30% LEÁRAZÁS - VILLÁMLEÁRAZÁS<br>
   <span>HASZNNÁLD A: <strong>FLASH</strong> KÓDOT <a href="#"></a></span>
-  <span>MOST VAGY SOHA. 2/28-IG.</span>
+  <span>MOST VAGY SOHA. 12/12-IG.</span>
 </div>
 
 <div class="banner">
@@ -91,7 +91,7 @@
 
 <div class="grid-container">
     <div class="grid-item">
-        <img src="/grind/png.avif" alt="New in Basketball">
+        <img src="grind/png.avif" alt="New in Basketball">
         <p>KOSÁRLABDA</p>
     </div>
     <div class="grid-item">
@@ -167,86 +167,86 @@ const products = [
       name: "Trainer",
       price: "26,999Ft",
       category: "Egyensúlyozó tréner",
-      image: "/mostsell/A_2613117_HB.webp"
+      image: "mostsell/A_2613117_HB.webp"
   },
   {
       name: "Zoom X-Fit",
       price: "6,499Ft",
       category: "Úszószemüveg",
-      image: "/mostsell/A_2898258_HB.webp"
+      image: "mostsell/A_2898258_HB.webp"
   },
   {
       name: "Ninebot",
       price: "9,000Ft",
       category: "Sisak",
-      image: "/mostsell/A_2964279_HB.webp"
+      image: "mostsell/A_2964279_HB.webp"
   },
   {
       name: "Aktivsport",
       price: "39,999Ft",
       category: "Bordásfal",
-      image: "/mostsell/A_3382736_HB.webp"
+      image: "mostsell/A_3382736_HB.webp"
   },  
   {
       name: "Phase",
       price: "8,999Ft",
       category: "Hátizsák",
-      image: "/mostsell/A_3401371_HB.webp"
+      image: "mostsell/A_3401371_HB.webp"
   },
   {
       name: "X Fact",
       price: "7,999Ft",
       category: "Húzódzkodó rúd",
-      image: "/mostsell/A_3450266_HB.webp"
+      image: "mostsell/A_3450266_HB.webp"
   },
   {
       name: "TA-13 Aktion",
       price: "4,999Ft",
       category: "Kerékpár computer",
-      image: "/mostsell/A_558470_HB.webp"
+      image: "mostsell/A_558470_HB.webp"
   },
   {
       name: "X Fact - UNICORN",
       price: "99,999Ft",
       category: "Gyerek kerékpár",
-      image: "/mostsell/B_558470_HB.webp"
+      image: "mostsell/B_558470_HB.webp"
   },
   {
       name: "X Fact",
       price: "3,000Ft",
       category: "Súlytárcsa",
-      image: "/mostsell/X-Fact-UTE-2X1-5kg-2285566-00-146707.jpg",
+      image: "mostsell/X-Fact-UTE-2X1-5kg-2285566-00-146707.jpg",
   },  
   {
 
       name: "Schildkröt",
       price: "159 999 FT",
       category: "Ping-pong asztal",
-      image: "/mostsell/B_2861055_HB.webp"
+      image: "mostsell/B_2861055_HB.webp"
   },  
   {
       name: "Robust",
       price: "86 999 FT",
       category: "Szobakerékpár",
-      image: "/mostsell/B_2896141_HB.webp"
+      image: "mostsell/B_2896141_HB.webp"
   }, 
 {
-      name: "Aktivsport",
+      name: "Aktívsport",
       price: "21 999 FT",
       category: "Húzódzkodó",
-      image: "/mostsell/B_3315143_HB.webp"
+      image: "mostsell/B_3315143_HB.webp"
   },  
   {
       name: "Focus II",
       price: "25 999 FT",
       category: "Verseny darts tábla",
-      image: "/mostsell/B_3160532_HB.webp"
+      image: "mostsell/B_3160532_HB.webp"
   },  
   {
-      name: "Aktivsport",
+      name: "Aktivspórt",
       price: "16 999 FT",
       category: "Focikapu",
-      image: "/mostsell/B_3509772_HB.webp"
+      image: "mostsell/B_3509772_HB.webp"
   },
 ];
 const productList = document.getElementById("productList");
@@ -255,10 +255,12 @@ products.forEach(product => {
   const productDiv = document.createElement("div");
   productDiv.classList.add("product");
   productDiv.innerHTML = `
-      <img src="${product.image}" alt="${product.name}">
-      <h3>${product.name}</h3>
-      <p>${product.category}</p>
-      <p class="price">${product.price}</p>
+      <a href="products/${product.name.toLowerCase().replace(/\s+/g, '-')}.html">
+          <img src="${product.image}" alt="${product.name}">
+          <h3>${product.name}</h3>
+          <p>${product.category}</p>
+          <p class="price">${product.price}</p>
+      </a>
   `;
   productList.appendChild(productDiv);
 });
@@ -326,22 +328,22 @@ const sponzor = [
       name: "Speedcat Ballet",
       price: "25,000Ft",
       category: "Női Cipőzet",
-      image: "/speedcat/Speedcat-Ballet-Leather-Women's-ShoesA.avif"
+      image: "speedcat/Speedcat-Ballet-Leather-Women's-ShoesA.avif"
   },  {
       name: "Speedcat OG",
       price: "30,000Ft",
       category: "Gyerek Cipőzet",
-      image: "/speedcat/Speedcat-OG-Toddlers'-SneakersC.avif"
+      image: "speedcat/Speedcat-OG-Toddlers'-SneakersC.avif"
   },  {
       name: "Speedcat OG",
       price: "15,000Ft",
       category: "Gyerek Cipőzet",
-      image: "/speedcat/Speedcat-OG-Little-Kids'-SneakersD.avif"
+      image: "speedcat/Speedcat-OG-Little-Kids'-SneakersD.avif"
   },  {
       name: "Speedcat OG",
       price: "18,000Ft",
       category: "Női Cipőzet",
-      image: "/speedcat/Speedcat-OG-Women's-SneakersB.avif"
+      image: "speedcat/Speedcat-OG-Women's-SneakersB.avif"
   },
 ];
 const sponzorList = document.getElementById("sponzorList");
@@ -350,10 +352,12 @@ sponzor.forEach(sponzor => {
   const sponzorDiv = document.createElement("div");
   sponzorDiv.classList.add("sponzor");
   sponzorDiv.innerHTML = `
-      <img src="${sponzor.image}" alt="${sponzor.name}">
-      <h3>${sponzor.name}</h3>
-      <p>${sponzor.category}</p>
-      <p class="price">${sponzor.price}</p>
+      <a href="products/${sponzor.name.toLowerCase().replace(/\s+/g, '-')}.html">
+          <img src="${sponzor.image}" alt="${sponzor.name}">
+          <h3>${sponzor.name}</h3>
+          <p>${sponzor.category}</p>
+          <p class="price">${sponzor.price}</p>
+      </a>
   `;
   sponzorList.appendChild(sponzorDiv);
 });
@@ -366,5 +370,106 @@ function scrollsponzorRights() {
   document.getElementById("sponzorContainer").scrollBy({ left: 400, behavior: 'smooth' });
 }
 </script>
-</body>
-</html>
+
+<div id="newsletter-popup" class="popup-overlay">
+    <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <h2>Iratkozz fel hírlevelünkre</h2>
+        <p>Szerezz 15% kedvezményt első vásárlásodból!</p>
+        <form id="newsletter-form">
+            <input type="email" id="newsletter-email" placeholder="Email címed" required>
+            <button type="submit">Feliratkozás</button>
+        </form>
+    </div>
+</div>
+
+<style>
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.close-popup {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#newsletter-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#newsletter-form button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#newsletter-form button:hover {
+    opacity: 0.8;
+}
+</style>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const newsletterLinks = document.querySelectorAll('.newsletter');
+    const popup = document.getElementById('newsletter-popup');
+    const closeBtn = document.querySelector('.close-popup');
+    const form = document.getElementById('newsletter-form');
+
+    newsletterLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            popup.style.display = 'block';
+        });
+    });
+
+    closeBtn.addEventListener('click', function() {
+        popup.style.display = 'none';
+    });
+
+    popup.addEventListener('click', function(e) {
+        if (e.target === popup) {
+            popup.style.display = 'none';
+        }
+    });
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = document.getElementById('newsletter-email').value;
+        alert('Köszönjük a feliratkozást! A kuponkódot elküldtük a következő email címre: ' + email);
+        popup.style.display = 'none';
+        form.reset();
+    });
+});
+</script>

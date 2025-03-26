@@ -50,7 +50,6 @@ nav{
 }
 nav ul{
   list-style:none;
-  margin-right: 1230px;
   display: flex;
 }
 nav .home-li{
@@ -282,9 +281,12 @@ u:hover{
 .product p {
   color: gray;
 }
-.product .price {
+.product .price, .sponzor .price {
   font-weight: bold;
   color: black;
+  text-align: center;
+  position: static;
+  margin-top: 10px;
 }
 .arrow {
   position: absolute;
@@ -367,7 +369,7 @@ u:hover{
 }
 .sponzorarrow{
   position: absolute;
-  top: 135%;
+  top: 140%;
   transform: translateY(-50%);
   background: rgba(0, 0, 0, 0.5);
   color: white;
@@ -560,7 +562,24 @@ a{
   text-decoration: none;
   color: black;
 }
+.product a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
 
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.price{
+  position: absolute;
+  font-weight: bold;
+  color: black;
+  align: right;
+}
 @media (min-width: 768px) {
   .grid-item {
       width: 300px;
@@ -593,5 +612,4 @@ a{
   font-size: 18px;
   z-index: 10; /* Ensure arrows are above other elements */
 }
-  
 }
